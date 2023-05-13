@@ -30,7 +30,7 @@ public class Email {
             if(newPassword.length()>=8)
             {
                 int upper=0;
-                int lowe=0;
+                int lower=0;
                 int digit=0;
                 int sp=0;
                 for(int i =0 ; i <newPassword.length();i++)
@@ -39,13 +39,13 @@ public class Email {
                     if(ch >='A' && ch <='Z')
                         upper++;
                     else if(ch>='a' && ch<='z')
-                        lowe++;
+                        lower++;
                     else if(ch>='0' && ch <='9')
                         digit++;
                     else
                         sp++;
                 }
-                if(upper >=1 && lowe>=1 && digit >=1 && sp>=1)
+                if(upper >=1 && lower>=1 && digit >=1 && sp>=1)
                 {
                     this.password=newPassword;
                 }
